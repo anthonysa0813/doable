@@ -1,0 +1,21 @@
+{
+  "name": "doable-js-anthonysa0813",
+  "version": "1.0.0",
+  "description": "## Objective",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/codeableorg/doable-js-anthonysa0813.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/codeableorg/doable-js-anthonysa0813/issues"
+  },
+  "homepage": "https://github.com/codeableorg/doable-js-anthonysa0813#readme"
+}
