@@ -7,6 +7,11 @@ let taskContent = ``;
 const pathName = window.location.pathname;
 let listTask = [];
 
+if (!token) {
+  window.history.pushState("", "", "/login.html");
+  window.location.reload();
+}
+
 const getTask = async (url) => {
   const response = await fetch(url, {
     headers: { Authorization: `Token token=${token}` },
@@ -40,7 +45,8 @@ getTask(`${BASE_URI}/tasks`).then((res) => {
 });
 
 const newTask = `
-  <form class="newTask">
+  <div class="wrapper">
+    <form class="newTask">
     <div class="menuField">
       <input type="text" placeholder="do the dishes..." class="" />
     </div>
@@ -49,6 +55,7 @@ const newTask = `
     </div>
     <button type="submit">Buscar</button>
   </form>
+  </div>
 `;
 
 if (pathName == "/") {
@@ -140,21 +147,3 @@ formTask.addEventListener("submit", (e) => {
   console.log(newTaskForm);
   createTask(newTaskForm).then((res) => console.log(res));
 });
-
-/* 
-
-VERBOS HTTP
-- GET: OBTENER
-- POST: MANDAR, CREAR
-- DELETE: ELIMINAR
-- PUT: ACTUALIZAR=> email, password.. tienes que mandar todos los campos
-- PATCH: ACTUALIZAR=> email 
-
-
-
-
-
-
-
-
-*/
