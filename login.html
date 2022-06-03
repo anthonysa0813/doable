@@ -18,8 +18,25 @@
     <header class="header">
       <img src="./assets/images/doable-logo.png" alt="" />
     </header>
-    <div id="root"></div>
 
-    <script type="module" src="./index.js"></script>
+    <!-- <script src="./func.js"></script> -->
+    <div class="loginContainer">
+      <form class="">
+        <div class="field">
+          <label>Email</label>
+          <input type="email" class="rounded6" name="email" />
+        </div>
+        <div class="field">
+          <label>Password</label>
+          <input type="password" class="rounded6" name="password" />
+        </div>
+        <button type="submit" class="rounded6 font16">Login</button>
+        <a href="/register.html" class="text-center" id="createRefUser"
+          >Create Account</a
+        >
+      </form>
+    </div>
+
+    <script type="module" src="./login.js"></script>
   </body>
 </html>

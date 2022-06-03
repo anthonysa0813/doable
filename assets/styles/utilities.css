@@ -1,0 +1,31 @@
+.debug {
+  border: 3px solid brown;
+}
+
+:root {
+  --gray700: #374151;
+  --gray300: #d1d5db;
+  --gray200: #e5e7eb;
+  --graybg: #e5e5e5;
+  --pink500: #ec4899;
+  --pink300: #f9a8d4;
+  --white: #ffffff;
+}
+
+.rounded6 {
+  border-radius: 6px;
+}
+
+.font16 {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.text-center {
+  text-align: center;
+  margin-block-start: 1rem;
+  color: var(--pink500);
+}

@@ -1,0 +1,37 @@
+.loginContainer {
+  height: calc(100vh - 100px);
+  display: flex;
+  justify-content: center;
+  padding-top: 96px;
+  padding-inline: 1rem;
+}
+
+form {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+}
+
+form input {
+  width: 100%;
+  padding: 9px 13px;
+  border: none;
+  outline: none;
+  border: 1px solid var(--gray300);
+}
+
+.field {
+  margin-block-end: 1rem;
+}
+
+.field label {
+  color: var(--gray700);
+}
+
+form button {
+  background-color: var(--pink500);
+  color: var(--white);
+  border: none;
+  outline: none;
+  padding: 9px;
+}
