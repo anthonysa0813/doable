@@ -1,7 +1,50 @@
 @import url("./utilities.css");
 @import url("./header.css");
+@import url("./login.css");
 
 body {
   margin: 0;
   padding: 0;
+  font-family: "Inter", sans-serif;
+  font-family: "Montserrat", sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+#root {
+  padding: 1rem;
+}
+
+.taskContainer {
+  display: flex;
+  margin-block: 1.5rem;
+  align-items: center;
+  gap: 1rem;
+}
+
+.menuContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.menuField {
+  display: flex;
+  gap: 2rem;
+}
+.newTask {
+  width: 90%;
+  left: 5%;
+  position: absolute;
+  bottom: 100px;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.taskDiv {
+  height: 500px;
+  overflow: auto;
 }
